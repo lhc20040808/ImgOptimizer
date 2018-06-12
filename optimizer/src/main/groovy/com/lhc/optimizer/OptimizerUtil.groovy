@@ -31,7 +31,7 @@ class OptimizerUtil {
     }
 
     def static isTransparent(File file) {
-        BufferedImage img = ImageIO.read(file)
+        BufferedImage img = ImageIo.read(file)
         return img.colorModel.hasAlpha()
     }
 
